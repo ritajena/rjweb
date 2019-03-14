@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="131" viewBox="0 0 110 131">
+    <defs>
+        <linearGradient id="a" x1="100%" x2="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#5CC5EF"/>
+            <stop offset="100%" stop-color="#344390"/>
+        </linearGradient>
+        <linearGradient id="b" x1="113.699%" x2="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FF4900"/>
+            <stop offset="100%" stop-color="#344390"/>
+        </linearGradient>
+        <linearGradient id="c" x1="19.677%" x2="84.716%" y1="24.218%" y2="169.531%">
+            <stop offset="0%" stop-color="#16F2FE" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#5CC5EF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(.25 -5.445)">
+        <path fill="url(#a)" d="M.5 99.25h109v25.1c-11.912 7.818-30.079 11.727-54.5 11.727S12.412 132.168.5 124.35V99.25z"/>
+        <ellipse cx="55" cy="99.25" fill="#344390" rx="54.5" ry="13.5"/>
+        <path fill="#004DBB" d="M54.613 37.418H65.34V40.1H54.613zM54.613 42.782H65.34v2.682H54.613zM46.567 48.308H65.34v2.682H46.567z"/>
+        <path fill="url(#b)" fill-rule="nonzero" d="M16.243 35.426h13.41V.562H8.983l-8.83 8.83v26.034h16.09zM8.198 5.14v3.467H4.73L8.198 5.14zm-5.364 6.149h8.046V3.243h16.09v29.5H2.835V11.29z" transform="translate(40 21.25)"/>
+        <text fill="#5CC5EF" font-family="Lato-Regular, Lato" font-size="12" letter-spacing=".5">
+            <tspan x="22" y="93">101 001 00</tspan>
+        </text>
+        <text fill="#344390" font-family="Lato-Regular, Lato" font-size="12" letter-spacing=".5">
+            <tspan x="29.5" y="78">111 00 1</tspan>
+        </text>
+        <text fill="#344390" font-family="Lato-Regular, Lato" font-size="7" letter-spacing=".292">
+            <tspan x="21.281" y="62.077">10 11</tspan>
+        </text>
+        <text fill="#344390" font-family="Lato-Regular, Lato" font-size="9" letter-spacing=".375">
+            <tspan x="73.977" y="54">10 11</tspan>
+        </text>
+        <text fill="#344390" font-family="Lato-Regular, Lato" font-size="9" letter-spacing=".375">
+            <tspan x="19.281" y="28.153">11</tspan>
+        </text>
+        <path fill="url(#c)" d="M15.731.646H94.27v98.699c-13.168 4.108-26.82 6.162-40.956 6.162-14.135 0-26.663-2.054-37.582-6.162V.645z"/>
+    </g>
+</svg>

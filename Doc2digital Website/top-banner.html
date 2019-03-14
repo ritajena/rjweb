@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doc2Digital</title>
+    <link rel="shortcut icon" href="img/fav.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700i" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133731211-1"></script>
+
+<script>
+
+ window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+ 
+
+  gtag('config', 'UA-133731211-1');
+
+</script>
+</head>
+
+<body>
+   
+    <div class="main-wrapper">
+        <header class="h-fullscreen">
+          <div class="menu-bar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="display:none;">&times;</a>
+                <a href="javascript:void(0)" class="bar-icon" onclick="openNav()">&#9776;</a>
+            </div>
+             <div class="big-triangle top"></div>
+            <div class="circle-img"></div>
+
+            <div class="medium-triangle animated pulse top"></div>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                      
+                     
+                        <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo" /></a>
+                    </div>
+                    
+                    <!--/.nav-collapse -->
+                </div>
+            </nav>
+            <div class="banner-caption">
+                <div class="container text-center">
+                    <div class="h-full">
+                        <h1>Forget grids and rules<br/>
+        <b>choose dynamic and flexible</b></h1>
+                        <p><b>Find out yourself</b></p>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="big-triangle bottom"></div>
+            <div class="medium-triangle animated pulse bottom"></div>
+            <div class="banner-bottom-img"></div>
+           
+        </header>
+            </div>
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/jquery-migrate-1.4.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+            <script src="form.js"></script>
+
+            <script>
+                (function($) {
+                    $(window).load(function() {
+                        $(".scroll-down-1,.scroll-down a,.navbar a ,#nav-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+                            highlightSelector: "#nav-menu a",
+                            offset: 0,
+                            onStart: function() {
+                                //console.log("onstart");
+                            },
+                            onComplete: function() {
+                                // console.log("oncomplete");
+                                if (($('.usage').hasClass('mPS2id-highlight'))) {
+                                    $('.submenu-section2').css('display', 'block');
+                                    $('.submenu-section1, .submenu-section3, .submenu-section4 ').hide();
+                                } else if (($('.building-block').hasClass('mPS2id-highlight'))) {
+                                    $('.submenu-section3').css('display', 'block');
+                                    $('.submenu-section1, .submenu-section2, .submenu-section4 ').hide();
+                                }
+                            },
+                        });
+                        $("a[rel='next']").click(function(e) {
+                            e.preventDefault();
+                            var to = $(this).parent().parent("section").next().attr("id");
+                            $.mPageScroll2id("scrollTo", to);
+                        });
+                    });
+                    $(window).scroll(function() {
+                        if ($(this).scrollTop() > 50) {
+                            $('#scrollToTop').addClass('show');
+                        } else {
+                            $('#scrollToTop').removeClass('show');
+                        }
+                    });
+                    $('#scrollToTop').on('click', function() {
+                        $("html, body").animate({
+                            scrollTop: 0
+                        }, 1000, 'easeInOutExpo');
+                        return false;
+                    });
+                    $(".intro, .intro.mPS2id-clicked.mPS2id-highlight").click(function() {
+                        $('.submenu-section1').show();
+                        $('.submenu-section2, .submenu-section3, .submenu-section4').hide();
+                    })
+                    $(".usage, .usage.mPS2id-clicked.mPS2id-highlight").click(function() {
+                        $('.submenu-section2').show();
+                        $('.submenu-section1, .submenu-section3, .submenu-section4').hide();
+                    })
+                    $(".building-block, .building-block.mPS2id-clicked.mPS2id-highlight").click(function() {
+                        $('.submenu-section3').show();
+                        $('.submenu-section1, .submenu-section2, .submenu-section4').hide();
+                    })
+                    $(".journey, .journey.mPS2id-clicked.mPS2id-highlight").click(function() {
+                        $('.submenu-section4').show();
+                        $('.submenu-section1, .submenu-section2, .submenu-section3').hide();
+                    })
+
+                })(jQuery);
+
+                function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                $('.closebtn').show();
+                $('.bar-icon').hide();
+                }
+                function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                $('.closebtn').hide();
+                $('.bar-icon').show();
+                }
+
+                //modal popup open 2 min
+            </script>
+</body>
+
+</html>

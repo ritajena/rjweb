@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doc2Digital</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.4.0/css/intlTelInput.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133731211-1"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-133731211-1');
+    </script>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <ul id="nav-menu">
+            <li><a href="#demo" onclick="closeNav()">Demo <span class="triangle-container"><span class="triangle"></span></span> </a></li>
+            <li><a href="#features" onclick="closeNav()">Features <span class="triangle-container"><span class="triangle"></span></span></a></li>
+            <li><a href="#how-it-works" onclick="closeNav()">How It Works <span class="triangle-container"><span class="triangle"></span></span></a></li>
+            <li><a href="#we-serve" onclick="closeNav()">We Serve <span class="triangle-container"><span class="triangle"></span></span></a></li>
+            <!--<li><a href="javascript:void(0);" onclick="closeNav()">Pricing <span class="triangle-container"><span class="triangle"></span></span></a></li>-->
+            <li><a href="#contact" onclick="closeNav()">Pricing <span class="triangle-container"><span class="triangle"></span></span></a></li>
+            <li><a href="#faq" onclick="closeNav()">Faq's <span class="triangle-container"><span class="triangle"></span></span></a></li>
+        </ul>
+    </div>
+    <!--custom quote slider starts from here-->
+    <div class="quote-container" id="quoteSideBlock">
+        <div class="quote-wrapper">
+            <div class="section-header">
+                <h2>Get a custom quote</h2>
+            </div>
+            <div class="content">
+                <div id="success_message" class="alert alert-success" style="display:none;">
+                    <p>Sent your message successfully!</p>
+                </div>
+                <div id="error_message" class="alert alert-danger" style="display:none;">
+                    <p>Sorry there was an error sending your form. </p>
+                </div>
+                <form role="form" method="post" id="reused_form">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" id="name" name="name" required maxlength="50" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-xs-12">
+                            <div class="form-group">
+
+                                <input type="email" class="form-control" id="email" name="email" required maxlength="50" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-xs-12">
+                            <div class="form-group">
+
+                                <input id="phoneno" type="text" name="phoneno" pattern="^\d{10}$" class="form-control" placeholder="Phone" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-xs-12">
+                            <div class="form-group">
+                                <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="3" placeholder="What is in your mind?"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-xs-12">
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <a href="javascript:void(0)" class="closeQuotebtn" onclick="closeQuoteNav()" style="display:none;">&times;</a>
+            <!--content-->
+        </div>
+    </div>
+    <div class="main-wrapper">
+
+        <a href="javascript:void(0)" class="quote-bar" onclick="openQuoteNav()">Get a Quote</a>
+        <header class="h-fullscreen">
+            <div class="menu-bar">
+                <a href="javascript:void(0)" class="closeQuotebtn" onclick="closeQuoteNav()" style="display:none;">&times;</a>
+                <a href="javascript:void(0)" class="bar-icon" onclick="openQuoteNav()">&#9776;</a>
+            </div>
+            <div class="big-triangle top"></div>
+            <div class="circle-img"></div>
+
+            <div class="medium-triangle animated pulse top"></div>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+
+                        <a class="navbar-brand" href="#">
+                            <div class="outer-logo-wrap">
+                                <div class="inner-logo"><img src="img/inner-logo.svg" alt="logo" /></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#demo">Demo <span class="triangle-container"><span class="triangle"></span></span> </a></li>
+                            <li><a href="#features">Features <span class="triangle-container"><span class="triangle"></span></span></a></li>
+                            <li><a href="#how-it-works">How It Works <span class="triangle-container"><span class="triangle"></span></span></a></li>
+                            <li><a href="#we-serve">We Serve <span class="triangle-container"><span class="triangle"></span></span></a></li>
+                            <!--<li><a href="javascript:void(0);">Pricing <span class="triangle-container"><span class="triangle"></span></span></a></li>-->
+                            <li><a href="#contact-us">Pricing <span class="triangle-container"><span class="triangle"></span></span></a></li>
+                            <li><a href="#faqs">Faq's <span class="triangle-container"><span class="triangle"></span></span></a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </nav>
+            <div class="banner-caption">
+                <div class="container text-center">
+                    <div class="h-full">
+                        <h1>Forget grids and rules<br/>
+        <b>choose dynamic and flexible</b></h1>
+                        <p><b>Find out yourself</b></p>
+                        <!--<button type="button" class="btn btn-primary">DEMO</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="big-triangle bottom"></div>
+            <div class="medium-triangle animated pulse bottom"></div>
+            <div class="banner-bottom-img"></div>
+            <a class="scroll-down-1 scroll-down-inverse bounce" href="#demo"><span></span></a>
+        </header>
+        <div class="middle-content" id="content">
+            <section class="grey-bg" id="demo">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Time to walk the talk</h2>
+                        <p><b>Invoices, investment receipts, cheque, purchase order and more… you name it and we got it! </b></p>
+                    </div>
+                    <div class="content">
+                        <div class="demo-img-wrap">
+                            <img src="img/Demo.svg" alt="demo" />
+                        </div>
+                        <!--<div class="row">
+                            <div class="col-md-4 col-xs-12">
+                                <div class="upload-block">
+                                    <h4 class="text-right">Upload</h4>
+
+                                    <a href="javascript:void" style="cursor: default;">
+                                        <p class="vertical-text">Use Clear Printed Document</p>
+                                        <p>Upload a single image of Sales Invoice and see the magic happens.</p>
+                                        <div class="upload-img"></div>
+                                      <input type="file" name="myfile" /> 
+                                    </a>
+                                </div> 
+
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="preview-block">
+                                    <h4 class="text-right">Preview</h4>
+                                    <div class="preview-img-wrap"><img class="img-responsive" src="img/invoice.png" alt="invoice" /></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="tada-block">
+                                    <h4 class="text-right"> And ta-da!</h4>
+                                    <div class="tada-img"></div>
+                                    <div class="card">
+                                        <ul>
+                                            <li><b>Company Name :</b>
+                                                <br/>Big Data Company</li>
+                                            <li><b>Customer ID :</b>
+                                                <br/>HU5846</li>
+                                            <li><b>Amount :</b>
+                                                <br/>5623.30</li>
+                                            <li><b>Item No :</b>
+                                                <br/>45784</li>
+                                            <li><b>Date : </b>
+                                                <br/>December 22, 2016 </li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>-->
+                        <!--row ends here-->
+                    </div>
+                    <!--content ends here-->
+                </div>
+                <div class="double-triangle"></div>
+            </section>
+            <!--feature section ends here-->
+
+            <section id="features" class="features-block">
+                <div class="small-triangle"></div>
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Things that make us Different</h2>
+                        <p><b>Deploy our Computer Vision backed intelligent solution to bring efficiencies in your back office and central processes </b></p>
+                    </div>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-12">
+                                <div class="data-block">
+                                    <div class="img-wrap">
+                                        <img src="img/data-format.svg" alt="data-format" />
+                                    </div>
+                                    <p><b>Data formats don't make us sweat</b></p>
+                                    <p>Invoices, investment receipts, cheque, and more...</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="data-block">
+                                    <div class="img-wrap">
+                                        <img src="img/smart-data.svg" alt="data-format" />
+                                    </div>
+                                    <p><b>Smart data extraction, like a piece of cake </b></p>
+                                    <p>(Dynamic with no tight binding of layouts)</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="data-block">
+                                    <div class="img-wrap">
+                                        <img src="img/accuracy.svg" alt="data-format" />
+                                    </div>
+                                    <p><b>Accuracy that will make you say</b></p>
+                                    <p>…WOW </p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="data-block">
+                                    <div class="img-wrap">
+                                        <img src="img/batch-processing.svg" alt="data-format" />
+                                    </div>
+                                    <p><b>We are game for individual or batch processing mode </b></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="data-block">
+                                    <div class="img-wrap">
+                                        <img src="img/csv-json.svg" alt="data-format" />
+                                    </div>
+                                    <p><b>Choose your poison</b></p>
+                                    <p>- Export in CSV or JSON</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="data-block">
+                                    <div class="img-wrap">
+                                        <img src="img/api.svg" alt="data-format" />
+                                    </div>
+                                    <p><b>Go up and down with easy integration with custom APIs</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--row-->
+                    </div>
+                </div>
+                <!--container-->
+            </section>
+            <section id="how-it-works" class="howitworks-section">
+                <div class="first-row  row">
+                    <div class="yellow-bg col-md-4 col-xs-12">
+                        <div class="img-block">
+                            <img src="img/capture.svg" alt="capture" />
+                        </div>
+                        <h3>Capture</h3>
+                        <p>Feed scanned images to dynamically and systematically Capture all the text elements. No need of tight binding of layouts. </p>
+                        <div class="bottom-arrow"></div>
+                    </div>
+                    <div class="col-md-8 col-xs-12">
+                        <h2>Magic <br/>behind<br/> the scenes</h2>
+                    </div>
+
+                </div>
+                <div class="second-row row">
+                    <div class=" col-md-4">
+                        <div class="img-wrap">
+                            <div class="content-wrap">
+                                <h3>Structure</h3>
+                                <p>Make sense of data by understanding the context of the document. Data massaging and raw text extraction is done for processing.</p>
+                            </div>
+                            <div class="transparent-bg">
+                            </div>
+                        </div>
+                        <div class="top-arrow"></div>
+                    </div>
+                </div>
+                <div class="third-row row">
+                    <div class="col-md-4">
+                        <div class="img-wrap">
+                            <div class="content-wrap">
+                                <h3>Process</h3>
+                                <p>The output applying the smartest algorithms and business rules based on the context identified. Apply confidence scores to the output for further validation. </p>
+                            </div>
+                            <div class="transparent-bg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="double-triangle"></div>
+            </section>
+            <!--how-it-works  ends here-->
+            <section id="we-serve" class="we-serve-block">
+                <div class="small-triangle"></div>
+                <div class="container">
+                    <div class="section-header">
+                        <h2>We serve</h2>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <div class="logo-wrap"><img src="img/bank.svg" alt="bank" /></div>
+                                <p>Banks</p>
+                            </li>
+                            <li>
+                                <div class="logo-wrap"><img src="img/fintech.svg" alt="fintech" /></div>
+                                <p>Fintech</p>
+                            </li>
+                            <li>
+                                <div class="logo-wrap"><img src="img/bp-0.svg" alt="bp-0" /></div>
+                                <p>BPO</p>
+                            </li>
+                            <li>
+                                <div class="logo-wrap"><img src="img/insurance.svg" alt="insurance" /></div>
+                                <p>Insurance</p>
+                            </li>
+                            <li>
+                                <div class="logo-wrap"><img src="img/tekecom.svg" alt="tekecom" /></div>
+                                <p>Telecom</p>
+                            </li>
+                            <li>
+                                <div class="logo-wrap"><img src="img/health.svg" alt="health" /></div>
+                                <p>Healthcare</p>
+                            </li>
+                            <li>
+                                <div class="logo-wrap"><img src="img/governmant.svg" alt="government" /></div>
+                                <p>Government</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--content-->
+                    <div>
+                        <!--container-->
+            </section>
+            <!--we-serve-block ends here-->
+            <section id="contact-us" class="contact-us-block">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Get a custom quote</h2>
+                    </div>
+                    <div class="content">
+                        <div id="success_message" class="alert alert-success" style="display:none;">
+                            <p>Sent your message successfully!</p>
+                        </div>
+                        <div id="error_message" class="alert alert-danger" style="display:none;">
+                            <p>Sorry there was an error sending your form. </p>
+                        </div>
+                        <form role="form" method="post" id="reused_form">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-12">
+                                    <div class="form-group">
+
+                                        <input type="text" class="form-control" id="name" name="name" required maxlength="50" placeholder="Full Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <div class="form-group">
+
+                                        <input type="email" class="form-control" id="email" name="email" required maxlength="50" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <div class="form-group">
+
+                                        <input id="phoneno" type="text" name="phoneno" pattern="^\d{10}$" class="form-control" placeholder="Phone" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-xs-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="3" placeholder="What is in your mind?"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-xs-12">
+                                    <div class="text-right">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--content-->
+                </div>
+                <!--container-->
+                <div class="double-triangle"></div>
+            </section>
+            <!--we-serve-block ends here-->
+
+            <section id="faqs" class="faqs-block grey-bg">
+                <div class="small-triangle"></div>
+                <div class="container">
+                    <div class="section-header">
+                        <h2><span>Your questions make us</span></h2>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary">fire it away</button>
+                    </div>
+                    <div class="content">
+                        <h4 class="text-left">Some of the frequently asked questions are mentioned below:</h4>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <p><b>What does Doc2Digital do?</b></p>
+                                <p>Doc2Digital helps you to automatically extract data from scanned images, PDF documents and receive this data in a JSON or CSV format which you can upload or integrate to other systems or database. If you frequently receive PDF documents or scanned images and you are manually doing data entry of key fields, Doc2Digital can help you right away!</p>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <p><b>What formats does Doc2Digital support as inputs?</b></p>
+                                <p>We support popular image files as inputs but can customize to PDF for a volume project.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-6 col-xs-12">
+                                <p><b>What formats does Doc2Digital support as outputs?</b></p>
+                                <p>We can export in JSON or CSV as required.</p>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <p><b>How do we invoke Doc2Digital program?</b></p>
+                                <p>You can use Doc2Digital by invoking our API or run it in batch mode on an on-premise solution on request.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-6 col-xs-12">
+                                <p><b>What is the charge for using Doc2Digital?</b></p>
+                                <p>We offer highly competitive prices for various combinations and packs. Please refer to the Pricing page for further details.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--content-->
+                    <div>
+                        <!--container-->
+            </section>
+            <!--we-serve-block ends here-->
+
+            </div>
+            <footer>
+                <div class="text-right">
+                    <a href="javascript:void(0);" id="scrollToTop" class="show"><img src="img/up-arrow.png" alt="arrow-up"></a>
+                </div>
+                <div class="left-footer">
+                    <div class="footer-logo">
+                        <a href="javascript:void(0)"><img src="img/footer-logo.svg" alt="footer-logo" /></a>
+                    </div>
+                    <div class="bottom-position">
+                        <p>A product of V2Solutions</p>
+                    </div>
+                </div>
+                <!--left footer-->
+                <div class="right-footer">
+                    <div class="top-section text-right">
+                        <ul>
+                            <li><a href="#demo">Demo </a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#how-it-works">How it works</a></li>
+                            <li><a href="#we-serve"> we serve</a></li>
+                            <li><a href="#contact-us"> pricing</a></li>
+                            <li><a href="#faqs">faq’s</a> </li>
+                        </ul>
+                        <!-- <div class="pricing-btn">
+                            <a class="btn btn-primary" href="#contact-us">pricing</a>
+                        </div> -->
+                    </div>
+                    <!--top section ends here-->
+                    <div class="bottom-section">
+                        <div class="footer-v2-logo">
+                            <a href="javascript:void(0)"><img src="img/v-2-solutions.svg" alt="v-2-solutions" /></a>
+                        </div>
+                        <p class="address">2340 Walsh Avenue, Suite D, Santa Clara, CA 95051</p>
+                        <div class="bottom-position">
+                            <div class="pull-left">
+                                <p>Email: <a href="mailto:info@v2solutions.com"> info@v2solutions.com</a>
+                                    <p>
+                            </div>
+                            <div class="pull-right">
+                                <p>Copyright © 2019 Doc2Digital. All rights reserved.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--right footer-->
+                <div class="arrow_box">
+                </div>
+            </footer>
+            </div>
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/jquery-migrate-1.4.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.4.0/js/intlTelInput.js"></script>
+            <script src="form.js"></script>
+
+            <script>
+                /*---for page scroll to id  js---*/
+                (function($) {
+                    $(window).load(function() {
+                        $(".pricing-btn a, .scroll-down-1,.scroll-down a,.navbar a ,#nav-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+                            highlightSelector: "#navbar a",
+                            offset: 0,
+                            onStart: function() {
+                                //console.log("onstart");
+                            },
+
+                        });
+                        $("a[rel='next']").click(function(e) {
+                            e.preventDefault();
+                            var to = $(this).parent().parent("section").next().attr("id");
+                            $.mPageScroll2id("scrollTo", to);
+                        });
+                    });
+                    /*---for scroll to top js---*/
+                    $(window).scroll(function() {
+                        if ($(this).scrollTop() > 50) {
+                            $('#scrollToTop').addClass('show');
+                        } else {
+                            $('#scrollToTop').removeClass('show');
+                        }
+                    });
+                    $('#scrollToTop').on('click', function() {
+                        $("html, body").animate({
+                            scrollTop: 0
+                        }, 1000, 'easeInOutExpo');
+                        return false;
+                    });
+
+                })(jQuery);
+                /*---js for sidebar nav---*/
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    $('.closebtn').show();
+                    $('.bar-icon').hide();
+                }
+
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    $('.closebtn').hide();
+                    $('.bar-icon').show();
+                }
+                /*quote js*/
+
+                function openQuoteNav() {
+                    document.getElementById("quoteSideBlock").style.width = "330px";
+                    $('.closeQuotebtn').show();
+                    $('.quote-bar').hide();
+                    $("#quoteSideBlock").show();
+                }
+
+                function closeQuoteNav() {
+                    document.getElementById("quoteSideBlock").style.width = "0";
+                    $('.closeQuotebtn').hide();
+                    $('.quote-bar').show();
+                }
+                $(window).on("load", function() {
+                    document.getElementById("quoteSideBlock").style.width = "330px";
+                    $('.closeQuotebtn').show();
+                    $('.quote-bar').hide();
+                    $("#quoteSideBlock").delay(5000).hide(function() {
+                        $('.quote-bar').show();
+                    });
+
+                });
+                //phone js
+                $("#phoneno").intlTelInput({
+                    // allowDropdown: false,
+                    autoHideDialCode: false,
+                    // autoPlaceholder: "off",
+                    // dropdownContainer: "body",
+                    // excludeCountries: ["us"],
+                    // formatOnDisplay: false,
+                    // geoIpLookup: function(callback) {
+                    //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+                    //     var countryCode = (resp && resp.country) ? resp.country : "";
+                    //     callback(countryCode);
+                    //   });
+                    // },
+                    // hiddenInput: "full_number",
+                    // initialCountry: "auto",
+                    // localizedCountries: { 'de': 'Deutschland' },
+                    // nationalMode: false,
+                    //onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+                    // placeholderNumberType: "MOBILE",
+                    // preferredCountries: ['cn', 'jp'],
+                    separateDialCode: true,
+
+                });
+            </script>
+</body>
+
+</html>

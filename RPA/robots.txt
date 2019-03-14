@@ -1,0 +1,13 @@
+User-agent: * 
+
+Allow: /*.html$
+
+Disallow: /js/
+
+Disallow: /form.js/
+
+Disallow: /handler.php/
+
+Disallow: /LICENSE/
+
+Disallow: /readme.html/

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="129" height="163" viewBox="0 0 129 163">
+    <defs>
+        <linearGradient id="a" x1="100%" x2="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#3F99ED"/>
+            <stop offset="100%" stop-color="#005DB6"/>
+        </linearGradient>
+        <linearGradient id="b" x1="113.699%" x2="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FF4900"/>
+            <stop offset="100%" stop-color="#344390"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#5CC5EF" d="M.456 88.328l29.114 15.323v58.676L.456 147.005z"/>
+        <path fill="#344390" d="M58.683 88.328L29.57 103.651v58.676l29.113-15.322z"/>
+        <path fill="#ABDFF8" d="M2.074 87.15l27.496 14.362 26.934-13.837L29.29 74.02z"/>
+        <g transform="translate(.456 26.927)">
+            <path fill="#5CC5EF" d="M0 14.308l29.113 15.323v39.84L0 54.147z"/>
+            <path fill="#344390" d="M58.227 14.308L29.113 29.631v39.84l29.114-15.323z"/>
+            <circle cx="36.844" cy="37.197" r="2.298" fill="#054079"/>
+            <circle cx="50.635" cy="29.536" r="2.298" fill="#054079"/>
+            <path stroke="#6DCEFB" d="M37.597 37.509l9.206 7.661M50.238 29.847l9.205 7.662"/>
+            <g transform="translate(34.546 29.77)">
+                <ellipse cx="21.917" cy="30.157" fill="url(#a)" rx="18.376" ry="28.001" transform="rotate(-6 21.917 30.157)"/>
+                <ellipse cx="24.93" cy="29.711" fill="#2984D9" rx="18.1" ry="27.581" transform="rotate(-6 24.93 29.711)"/>
+                <ellipse cx="24.93" cy="29.711" fill="#2984D9" rx="14.557" ry="22.182" transform="rotate(-6 24.93 29.711)"/>
+                <ellipse cx="24.93" cy="29.711" fill="#21D6F9" rx="11.17" ry="17.022" transform="rotate(-6 24.93 29.711)"/>
+                <ellipse cx="24.93" cy="29.711" fill="#2984D9" rx="6.071" ry="9.251" transform="rotate(-6 24.93 29.711)"/>
+                <ellipse cx="24.93" cy="29.711" fill="#FFA400" rx="2.514" ry="3.831" transform="rotate(-6 24.93 29.711)"/>
+            </g>
+            <path fill="#ABDFF8" d="M1.618 13.13l27.495 14.362 26.935-13.836L28.833 0z"/>
+            <g fill="url(#b)" transform="translate(55.646 37.725)">
+                <path d="M6.37 20.472L69.011 4.095V5.66L6.371 22.4z"/>
+                <path d="M1.752 22.405l6.736-5.566 1.758 7.616zM64.444 6.22L71.181.652l-1.1 4.015 2.858 3.6z"/>
+                <path d="M60.563 7.038L67.3 1.472l-1.1 4.015 2.858 3.6z"/>
+            </g>
+        </g>
+        <g>
+            <path fill="#5CC5EF" d="M10.187 18.035L29.465 28.18v16.962L10.187 34.996z"/>
+            <path fill="#344390" d="M48.742 18.035L29.465 28.18v16.962l19.277-10.147z"/>
+            <path fill="#ABDFF8" d="M11.258 17.255l18.207 9.51L47.3 17.603 29.279 8.56z"/>
+        </g>
+        <g>
+            <path fill="#5CC5EF" d="M18.85 5.98l10.699 5.631v9.414l-10.7-5.631z"/>
+            <path fill="#344390" d="M40.248 5.98l-10.7 5.631v9.414l10.7-5.631z"/>
+            <path fill="#ABDFF8" d="M19.444 5.547l10.105 5.278 9.898-5.085L29.446.722z"/>
+        </g>
+    </g>
+</svg>

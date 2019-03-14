@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="722" height="722" viewBox="0 0 722 722">
+    <defs>
+        <linearGradient id="a" x1="5.917%" x2="93.775%" y1="92.292%" y2="0%">
+            <stop offset="0%" stop-color="#C8C8C8" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+        <linearGradient id="b" x1="6.142%" x2="92.54%" y1="90.951%" y2="1.281%">
+            <stop offset="0%" stop-color="#C8C8C8" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+        <linearGradient id="c" x1="6.326%" x2="93.775%" y1="92.02%" y2="0%">
+            <stop offset="0%" stop-color="#C8C8C8" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" opacity=".4" transform="translate(.49 .266)">
+        <g transform="translate(139.842 105.225)">
+            <ellipse cx="219.012" cy="255.406" stroke="#FFF" rx="218.709" ry="218.62"/>
+            <path stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M127.168 216.9l116.203 122.364 44.52-160.335z" opacity=".4"/>
+            <path stroke="url(#a)" stroke-linecap="round" stroke-width="2" d="M14.289 54.659L154.31.89l20.522 15.818" transform="translate(112.988 162.025)"/>
+            <path stroke="url(#b)" stroke-linecap="round" stroke-width="2" d="M78.849 128.493L218.87 74.725l20.522 15.818" transform="rotate(119 167.894 215.9)"/>
+            <path stroke="url(#c)" stroke-linecap="round" stroke-width="2" d="M-17.013 147.144l143.316-54.427 20.522 15.817" transform="rotate(-120 168.172 168.326)"/>
+            <path fill="#FFF" d="M160.088 252.527h-23.45l104.878 86.932z" opacity=".087"/>
+            <path stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M340.889 30.793C304.699 11.155 263.232 0 219.158 0 169.55 0 123.245 14.132 84.05 38.587M108.9 485.875c33.38 15.985 70.773 24.938 110.257 24.938 47.258 0 91.52-12.825 129.49-35.182"/>
+        </g>
+        <path stroke="#FFF" stroke-linecap="round" stroke-width="2" d="M194.314 110.291c-39.897 26.42-73.967 62.885-98.014 108.11M69.16 290.64a295.376 295.376 0 0 0-6.98 87.45m472.53 218.54c34.615-25.53 64.203-59.015 85.745-99.531a298.642 298.642 0 0 0 21.596-51.786m11.28-53.476a295.766 295.766 0 0 0 1.673-46.807" opacity=".101"/>
+        <ellipse cx="360.778" cy="360.632" stroke="#FFF" rx="346.564" ry="346.424"/>
+        <path stroke="#FFF" stroke-dasharray="8" d="M360.778 720.666c198.922 0 360.18-161.193 360.18-360.034C720.958 161.79 559.7.597 360.778.597S.598 161.79.598 360.632c0 198.841 161.258 360.034 360.18 360.034z"/>
+        <path fill="#FFF" d="M379.585 440.907l22.47-77.33h8.788l-8.789 69.142z" opacity=".077"/>
+        <path fill="#FFF" d="M305.046 364.565h-21.02l94.015 77.929z" opacity=".087"/>
+    </g>
+</svg>
